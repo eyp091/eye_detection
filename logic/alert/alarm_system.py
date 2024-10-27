@@ -1,3 +1,6 @@
+import sys
+sys.path.append('C:/Users/escan/Desktop/python_folder_structure/logic')
+
 import pygame
 
 alert_sound = './assets/sounds/uyari_sesi.mp3'
