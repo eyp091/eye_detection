@@ -6,7 +6,7 @@ def findNearesRestArea():
         f"https://maps.googleapis.com/maps/api/place/nearbysearch/json"
         f"?location={current_latitude},{current_longitude}"
         "&radius=50000"
-        "&type=gas_station|restaurant|cafe|rest_area"
+        "&type=cafe|gas_station|restaurant|rest_area"
         f"&key={api_key}"
     )
 
