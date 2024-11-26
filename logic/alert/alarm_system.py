@@ -1,5 +1,8 @@
 import sys
+import os
+
 sys.path.append('C:/Users/escan/Desktop/python_folder_structure/logic')
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "1"
 
 import pygame
 
