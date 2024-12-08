@@ -18,11 +18,9 @@ def processVideoStream(eye_model, yawn_model):
         if not ret: break
 
         eye_results, _ = eye_model.predict(frame)
-        yawn_results, _ = yawn_model.predict(frame)
 
         # göz ve esneme durumunu kontrol et
-        checkStatus(eye_results, eye_model, counts, frame, check_type="eye")
-        checkStatus(yawn_results, yawn_model, counts, frame, check_type="yawn")
+        checkStatus(eye_results, eye_model, counts, frame)
 
         cv2.imshow("webcam", frame)
 
@@ -32,7 +30,7 @@ def processVideoStream(eye_model, yawn_model):
     cv2.destroyAllWindows()
 
 def main():
-    eye_model, yawn_model = loadModels()
+    eye_model = loadModels()
     processVideoStream(eye_model, yawn_model)
 
 
