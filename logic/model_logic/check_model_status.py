@@ -2,7 +2,6 @@ import cv2
 import itertools
 import threading
 from logic.alert.alarm_system import AlertSystem
-from logic.apps.start_web_app import startWebApp
 
 def checkStatus(results, model, counts, frame):
     all_boxes = itertools.chain.from_iterable(result.boxes for result in results)
@@ -43,6 +42,3 @@ def checkStatus(results, model, counts, frame):
             threading.Thread(target=AlertSystem.playAlertSound).start()
             counts['alarm_triggered'] = True
             counts['tired_count'] += 1
-
-            if counts['tired_count'] >= 2:
-                startWebApp()
