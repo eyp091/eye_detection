@@ -1,4 +1,4 @@
 import subprocess
 
 def startWebApp():
-    subprocess.Popen(['python', 'logic/apps/rest_app.py'])
+    subprocess.Popen(['python', 'logic/apps/start_websocket.py'])

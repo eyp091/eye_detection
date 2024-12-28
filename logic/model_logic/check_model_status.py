@@ -44,5 +44,5 @@ def checkStatus(results, model, counts, frame):
             counts['alarm_triggered'] = True
             counts['tired_count'] += 1
 
-            if counts['tired_count'] >= 2:
+            if counts['tired_count'] >= 1:
                 startWebApp()
