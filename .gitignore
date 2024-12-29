@@ -1,1 +1,17 @@
-/logic/utils/config.py
+# Ignore the config.py file in /logic/utils/ directory
+logic/utils/config.py
+
+# General Python-related ignores
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.log
+
+# Virtual environment
+venv/
+.env
+
+# IDE specific files
+.vscode/
+.idea/
