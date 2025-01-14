@@ -44,8 +44,6 @@ def processVideoStreamAndSendMessages(eye_model):
             eye_results, _ = eye_model.predict(frame)
             checkStatus(eye_results, eye_model, counts, frame)
 
-            print(f"mesaj: {client_message}")
-
             if counts['tired_count'] > 0:
                 sio.emit('status', {"message": "yorgun"})
             else:

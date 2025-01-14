@@ -1,5 +1,0 @@
-pygame
-flask
-ultralytics
-requests
-websockets
