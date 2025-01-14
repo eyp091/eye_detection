@@ -81,3 +81,9 @@ def checkStatus(results, model, counts, frame):
             threading.Thread(target=AlertSystem.playAlertSound).start()
             counts['alarm_triggered'] = True
             counts['tired_count'] += 1
+<<<<<<< HEAD
+
+            if counts['tired_count'] >= 1:
+                startWebApp()
+=======
+>>>>>>> 4be4a4ed0f96bb019eb8e5e468834e38762aad3d
